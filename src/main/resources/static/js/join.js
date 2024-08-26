@@ -15,9 +15,9 @@ function join() {
         })
     }).done(function(response){
         alert("회원가입 성공");
-        location.href = "/";
+        location.href = "/login";
     }).fail(function (err){
         alert(err);
-        location.href = "/"
+        location.href = "/join"
     });
 }

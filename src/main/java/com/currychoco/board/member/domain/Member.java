@@ -1,8 +1,7 @@
-package com.currychoco.board.log.domain;
+package com.currychoco.board.member.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 @AllArgsConstructor
