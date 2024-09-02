@@ -12,6 +12,6 @@ public class MemberRepository {
     private final SqlSessionTemplate sqlSession;
 
     public void save(MemberJoinDto member) {
-        sqlSession.insert("product.save", member);
+        sqlSession.insert("member.save", member);
     }
 }

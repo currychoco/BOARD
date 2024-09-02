@@ -3,6 +3,6 @@
 
 <mapper namespace="member">
     <insert id="save" parameterType="com.currychoco.board.member.domain.MemberJoinDto">
-        insert into member(id, password, name) values(#{id}, #{password}, #{name})
+        insert into member(id, password, nickname) values(#{id}, #{password}, #{nickname})
     </insert>
 </mapper>

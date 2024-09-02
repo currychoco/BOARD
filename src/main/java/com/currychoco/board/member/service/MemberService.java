@@ -14,7 +14,7 @@ public class MemberService {
 
     public void saveMember(MemberJoinDto member) {
         String hashedPassword = DigestUtils.sha256Hex(member.getPassword());
-        MemberJoinDto memberJoinDto =  new MemberJoinDto(member.getId(), hashedPassword, member.getName());
+        MemberJoinDto memberJoinDto =  new MemberJoinDto(member.getId(), hashedPassword, member.getNickname());
         memberRepository.save(memberJoinDto);
     }
 }

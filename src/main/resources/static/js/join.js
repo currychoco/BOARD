@@ -2,7 +2,7 @@
 function join() {
     const id =$("#id").val();
     const password = $("#password").val();
-    const name = $("#name").val();
+    const nickname = $("#nickname").val();
 
     $.ajax({
         type : "POST",
@@ -11,7 +11,7 @@ function join() {
         data : JSON.stringify({
             id : id,
             password : password,
-            name : name
+            nickname : nickname
         })
     }).done(function(response){
         alert("회원가입 성공");
